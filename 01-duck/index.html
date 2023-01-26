@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="scri.js"></script>
+
+    <title>Talking Duck</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <!--Header--->
+        <header>
+            <img src="images/logo.png" alt="">
+        </header>
+
+        <main>
+
+            <!---Text area-->
+
+            <textarea placeholder="Write something here..."></textarea>
+            
+            <!---Controls-->
+
+            <div class="controls">
+                <button>
+                    <img src="images/play.png" alt="">
+                </button>
+
+                <div class="pitch-controls">
+                    <label >
+                        Pitch
+                    </label>
+                    <input id="pitch-range" type="range" min="0.1" max="2", step="0.1" value="1">
+                </div>
+            </div>
+            
+            <!---Duck!-->
+
+            <figure>
+                <img hidden class="duck-moving" src="images/duck-moving.gif" />
+                <img class="duck-stop" src="images/duck-stop.png" />
+            </figure>
+
+        </main>
+    </div>
+
+</body>
+</html>
